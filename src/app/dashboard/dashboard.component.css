@@ -1,0 +1,32 @@
+h3 { 
+        background-color: #90AFC5;
+        color:  #2A3132;
+}
+
+.header {
+        text-align: center;
+        margin: 20px;
+}
+
+
+.container {
+        display: flex;
+        background-color:#763626;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.child {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+}
+
+.result {
+        color: white;
+}
+
+h2 {
+        font-family: 'Courier';
+        
+}

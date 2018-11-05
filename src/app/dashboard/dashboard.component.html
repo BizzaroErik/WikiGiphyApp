@@ -1,0 +1,19 @@
+
+<div class = "ui large form segment">
+  <h2 class="header" id = "headerText">Wiki-Giph</h2>
+  
+    <div class = "header field">
+      <input name = "wikiQuery" id = "wikiQuery" placeholder="Enter Wiki-Giph"#newQuery>
+      <button (click) = "searchWiki(newQuery)"
+      class = "ui positive right floated button">Search</button>
+    </div>
+  
+ 
+</div>
+
+<div class = "container">
+    <div class = "result" *ngFor = "let queryResult of wikiList; index as i">
+      {{i}}. {{ queryResult }}
+      <app-giphy-list  class = "child" [giphySearch] = "queryResult"></app-giphy-list>
+    </div>
+</div>
